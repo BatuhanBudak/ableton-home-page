@@ -6,7 +6,7 @@ import LanguageSelector from './LanguageSelector';
 
 
 function Footer() {
-    const [email, setEmail] = useState<string>('');
+    const [email, setEmail] = useState('');
 
     function handleEmail(e: { preventDefault: () => void; target: { value: React.SetStateAction<string>; }; }) {
         e.preventDefault();
@@ -23,10 +23,10 @@ function Footer() {
                             <li className={styles.hasArrow}>About Ableton</li>
                             <li className={styles.hasArrow}>Jobs</li>
                             <ul className={styles.flex}>
-                                <li className={`${styles.facebook} logo-item`}><Image src="/facebook.svg" alt="Facebook Logo" width={40} height={40} /></li>
-                                <li className={`${styles.twitter} logo-item`}><Image src="/twitter.svg" alt="Twitter Logo" width={40} height={40} /></li>
-                                <li className={`${styles.youtube} logo-item`}><Image src="/youtube.svg" alt="Youtube Logo" width={40} height={40} /></li>
-                                <li className={`${styles.instagram} logo-item`}><Image src="/instagram.svg" alt="Instagram Logo" width={40} height={40} /></li>
+                                <li className={`${styles.facebook} ${styles.logoItem}`}><Image src="/facebook.svg" alt="Facebook Logo" width={40} height={40} /></li>
+                                <li className={`${styles.twitter} ${styles.logoItem}`}><Image src="/twitter.svg" alt="Twitter Logo" width={40} height={40} /></li>
+                                <li className={`${styles.youtube} ${styles.logoItem}`}><Image src="/youtube.svg" alt="Youtube Logo" width={40} height={40} /></li>
+                                <li className={`${styles.instagram} ${styles.logoItem}`}><Image src="/instagram.svg" alt="Instagram Logo" width={40} height={40} /></li>
                             </ul>
                         </ul>
                     </div>

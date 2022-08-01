@@ -23,7 +23,11 @@
     width: 50%;
 }
 
-.logo-item {
+.thiryWidth {
+    width: 30%;
+}
+
+.logoItem {
     font-size: 0;
     margin-top: .625rem;
     margin-right: .625rem;

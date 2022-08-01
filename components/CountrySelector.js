@@ -1,10 +1,20 @@
 import React, { useState, useMemo } from "react";
-import countryList from "react-select-country-list";
 import Select from "react-select";
+const options = [
+  { value: "Turkey", label: "Turkey" },
+  { value: "UK", label: "UK" },
+  { value: "Germany", label: "Germany" },
+  { value: "USA", label: "USA" },
+  { value: "India", label: "India" },
+  { value: "Iraq", label: "Iraq" },
+  { value: "Syria", label: "Syria" },
+  { value: "Georgia", label: "Georgia" },
+  { value: "Greece", label: "Greece" },
+  { value: "Bulgaria", label: "Bulgaria" },
+];
 
 function CountrySelector() {
   const [value, setValue] = useState("");
-  const options = useMemo(() => countryList().getData(), []);
 
   const changeHandler = (value) => {
     setValue(value);
@@ -13,7 +23,7 @@ function CountrySelector() {
   return (
     <Select
       options={options}
-      placeholder="UK"
+      defaultValue={"Turkey"}
       value={value}
       onChange={changeHandler}
     />

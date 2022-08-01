@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Select from "react-select";
 
 const options = [
@@ -7,8 +7,16 @@ const options = [
   { value: "Deutsch", label: "Deutsch" },
 ];
 
-const LanguageSelector = () => (
-  <Select placeholder="English" options={options} />
-);
+function LanguageSelector() {
+  const [selectedOption, setSelectedOption] = useState("English");
+
+  return (
+    <Select
+      defaultValue={selectedOption}
+      onChange={setSelectedOption}
+      options={options}
+    />
+  );
+}
 
 export default LanguageSelector;
