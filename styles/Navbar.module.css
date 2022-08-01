@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    border-bottom: 1px solid rgba(243, 243, 243);
+    background-color: #fff;
+}
+
+
+
+.leftNav,
+.rightNav {
+    display: flex;
+    gap: 2em;
+}
+
+.leftNav {
+    font-weight: bold;
+}
+
+.blue {
+    color: #0000ff;
+}
+
+/* li {} */

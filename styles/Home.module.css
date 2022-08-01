@@ -4,6 +4,7 @@
 
 .main {
   min-height: 100vh;
+  background-color: #fff;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -11,6 +12,14 @@
   justify-content: center;
   align-items: center;
 }
+
+
+/* @media screen and (min-width: 100em) {
+  .main {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+} */
 
 .footer {
   display: flex;
@@ -116,13 +125,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
