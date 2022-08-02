@@ -15,12 +15,112 @@
 
 .imageContainer {
   position: relative;
-  max-width: 1000px;
-  max-height: 500px;
+  max-width: 1200px;
+  max-height: 600px;
   overflow: hidden;
+  margin-bottom: 3em;
 }
 
-.imageContainer::after {
+.blue {
+  color: #0000ff;
+}
+
+.bold {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+.firstImgLayout {
+  width: 100%;
+  display: flex;
+  min-height: 120vh;
+  margin-bottom: 3em;
+}
+
+
+.secondImageContainer {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.secondImageContainer>* {
+  position: relative;
+  left: 15%;
+}
+
+.thirdImageContainer {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbffa7;
+}
+
+
+.secondImgLayout {
+  width: 100%;
+  display: flex;
+  min-height: 140vh;
+  margin-bottom: 3em;
+}
+
+.fourthImageContainer {
+  width: 55%;
+  background-color: #b6ffc0;
+  background-image: url('/ableton-4.jpg'), url('/ableton-5.jpg');
+  background-position: left 20% top 15%, left 20% bottom 15%;
+  background-repeat: no-repeat no-repeat;
+}
+
+.fifthImageContainer {
+  width: 45%;
+  background-image: url('/ableton-6.jpg');
+  background-position: top 50% left;
+  background-repeat: no-repeat no-repeat;
+  transform: translateX(-5rem);
+}
+
+.thirdImgLayout {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  min-height: 120vh;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  background-color: #d5b3ff;
+}
+
+.sixthImageContainer {
+
+  width: 33.33333vw;
+  height: 25vw;
+  background-image: url('/ableton-8.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat no-repeat;
+  transform: translateX(-7vw);
+}
+
+.seventhImageContainer {
+
+  width: 41.66667vw;
+  height: 41.66667vw;
+  background-image: url('/ableton-9.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  transform: translateX(10.5vw)
+}
+
+
+/* .imageContainer::after {
   position: absolute;
   content: 'Abelton';
   color: #ff764d;
@@ -29,7 +129,7 @@
   top: 30%;
   left: 40%;
   font-size: 6rem;
-}
+} */
 
 
 

@@ -75,7 +75,7 @@ function Footer() {
                             <div className={styles.thiryWidth}>
                                 <LanguageSelector />
                             </div>
-                            <div className={styles.halfWidth}>
+                            <div className={styles.foutryWidth}>
                                 <CountrySelector />
                             </div>
                         </ul>

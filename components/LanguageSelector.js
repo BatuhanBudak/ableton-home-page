@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useId } from "react";
 import Select from "react-select";
 
 const options = [
@@ -15,6 +15,7 @@ function LanguageSelector() {
       defaultValue={selectedOption}
       onChange={setSelectedOption}
       options={options}
+      instanceId={useId()}
     />
   );
 }

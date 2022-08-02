@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useId } from "react";
 import Select from "react-select";
 const options = [
   { value: "Turkey", label: "Turkey" },
@@ -26,6 +26,7 @@ function CountrySelector() {
       defaultValue={"Turkey"}
       value={value}
       onChange={changeHandler}
+      instanceId={useId()}
     />
   );
 }
