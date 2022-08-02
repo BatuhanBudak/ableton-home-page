@@ -1,0 +1,30 @@
+.videoResponsive {
+    overflow: hidden;
+    /* padding-bottom: 56.25%; */
+    position: relative;
+    height: auto;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.videoResponsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.videoResponsive::after {
+    display: block;
+    position: absolute;
+    bottom: -2em;
+    font-weight: 700;
+    z-index: 2;
+    content: 'Why Ableton - Juanpe Bolivar';
+    font-size: .875rem;
+    line-height: 1.5;
+    margin-top: .5em;
+}

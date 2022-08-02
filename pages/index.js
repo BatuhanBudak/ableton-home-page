@@ -5,6 +5,7 @@ import Image from "next/image";
 import studiopic from "../public/studio.jpeg";
 import ableton2 from "../public/ableton-2.jpg";
 import ableton3 from "../public/ableton-3.jpg";
+import YoutubeEmbed from "../components/YoutubeEmbed";
 
 export default function Home() {
   return (
@@ -54,7 +55,8 @@ export default function Home() {
             make it for.
           </p>
         </section>
-        <iframe></iframe>
+        <YoutubeEmbed embedId="9SbnhgjeyXA" />
+
         <section>
           <p className={styles.bold}>
             We are more then 350 people from 30 different countries divided
@@ -131,6 +133,21 @@ export default function Home() {
             activities.
           </p>
         </section>
+        <div className={styles.fourthImgLayout}>
+          <div className={styles.eighthImageContainer}></div>
+          <div className={styles.jobsContainer}>
+            <h1 className={`${styles.bold} ${styles.jobsInfo}`}>
+              We're really proud of the work we've done so far. But there's so
+              much to come. If you'd like to be a part of it, please join us.
+            </h1>
+            <a
+              className={`${styles.hasArrow} ${styles.blue} ${styles.joblink}`}
+              href="https://www.ableton.com/en/jobs/"
+            >
+              See latest jobs
+            </a>
+          </div>
+        </div>
       </main>
       <Footer />
     </>

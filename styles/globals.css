@@ -24,12 +24,12 @@ body {
 }
 
 section {
-  max-width: 800px;
+  max-width: 900px;
   padding: 4em 6em;
   text-align: justify;
   margin: 0 auto;
+  margin-bottom: 3em;
 }
-
 
 h1 {
   font-size: 3rem;
@@ -43,9 +43,19 @@ a {
   cursor: pointer;
 }
 
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
 image {
   display: block;
   max-width: 100%;
+}
+
+p {
+  letter-spacing: 2.5px;
 }
 
 ul {
@@ -56,6 +66,7 @@ ul {
 
 li {
   margin-bottom: .3rem;
+  font-size: 1rem;
 }
 
 ::placeholder {

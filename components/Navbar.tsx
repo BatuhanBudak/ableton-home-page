@@ -4,22 +4,31 @@ import styles from '../styles/Navbar.module.css'
 
 export default function Navbar() {
     return (
-        <nav className={styles.navbar}>
-            <ul className={styles.leftNav}>
-                <li><Image src="/logo.svg" alt="Ableton Logo" width={45} height={21} /></li>
-                <li><a >Push</a></li>
-                <li><a>Link</a></li>
-                <li><a>Shop</a></li>
-                <li><a>Packs</a></li>
-                <li><a>Help</a></li>
-                <li><a>More + </a></li>
-            </ul>
+        <>
+            <nav className={styles.navbar}>
+                <ul className={styles.leftNav}>
+                    <li><Image src="/logo.svg" alt="Ableton Logo" width={45} height={21} /></li>
+                    <li className={styles.mainNavItem}><a >Push</a></li>
+                    <li className={styles.mainNavItem}><a>Link</a></li>
+                    <li className={styles.mainNavItem}><a>Shop</a></li>
+                    <li className={styles.mainNavItem}><a>Packs</a></li>
+                    <li className={styles.mainNavItem}><a>Help</a></li>
+                    <li className={styles.mainNavItem}><a>More + </a></li>
+                </ul>
 
-            <ul className={styles.rightNav}>
-                <li><span className={styles.blue}><a>Try Live for free</a></span></li>
-                <li><a>Account</a></li>
-                <li><a>Log in</a></li>
-            </ul>
-        </nav>
+                <ul className={styles.rightNav}>
+                    <li className={styles.mainNavItem}><span className={styles.blue}><a>Try Live for free</a></span></li>
+                    <li ><a>Log in or register</a></li>
+                </ul>
+
+            </nav>
+            <nav className={styles.stickyNav}>
+                <ul>
+                    <li className={styles.secondNavItem}>About</li>
+                    <li className={styles.secondNavItem}>Jobs</li>
+                    <li className={styles.secondNavItem}>Apprenticeships</li>
+                </ul>
+            </nav>
+        </>
     )
 }
