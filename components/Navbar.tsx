@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
+import useScrollPos from '../hooks/useScrollPos'
 import Image from '../node_modules/next/image'
 import styles from '../styles/Navbar.module.css'
 
 export default function Navbar() {
+
+    const scrollClass = useScrollPos();
+
     return (
         <>
             <nav className={styles.navbar}>
@@ -13,7 +17,7 @@ export default function Navbar() {
                     <li className={styles.mainNavItem}><a>Shop</a></li>
                     <li className={styles.mainNavItem}><a>Packs</a></li>
                     <li className={styles.mainNavItem}><a>Help</a></li>
-                    <li className={styles.mainNavItem}><a>More + </a></li>
+                    <li className={styles.mainNavItem}><a className={styles.orange}>More + </a></li>
                 </ul>
 
                 <ul className={styles.rightNav}>
@@ -22,9 +26,9 @@ export default function Navbar() {
                 </ul>
 
             </nav>
-            <nav className={styles.stickyNav}>
+            <nav className={`${styles.stickyNav} ${scrollClass}`}>
                 <ul>
-                    <li className={styles.secondNavItem}>About</li>
+                    <li className={`${styles.secondNavItem} ${styles.orange}`}>About</li>
                     <li className={styles.secondNavItem}>Jobs</li>
                     <li className={styles.secondNavItem}>Apprenticeships</li>
                 </ul>
