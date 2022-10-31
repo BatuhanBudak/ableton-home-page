@@ -142,7 +142,7 @@ export default function Home() {
             </h1>
             <a
               className={`${styles.hasArrow} ${styles.blue} ${styles.joblink}`}
-              href="https://www.ableton.com/en/jobs/"
+              href=""
             >
               See latest jobs
             </a>

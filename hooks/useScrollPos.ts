@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import styles from "../styles/Navbar.module.css";
 
 export default function useScrollPos() {
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const [scrollMove, setScrollMove] = useState("");
-  const [scrollClass, setScrollClass] = useState("");
+  const [lastScrollY, setLastScrollY] = useState<number>(0);
+  const [scrollMove, setScrollMove] = useState<string>("");
+  const [scrollClass, setScrollClass] = useState<string>("");
   const headerHeight = 128;
 
-  const checkScrollClass = () => {
+  const checkScrollClass = (): void => {
     if (scrollMove === "") {
       setScrollClass("");
     } else if (scrollMove === "up") {
@@ -18,9 +18,9 @@ export default function useScrollPos() {
   };
 
   useEffect(() => {
-    function handleScroll() {
+    function handleScroll(): void {
       let currentScroll = window.scrollY;
-      // console.log({ scrollDown, scrollUp });
+      
 
       if (currentScroll <= headerHeight) {
         setScrollMove("up");
